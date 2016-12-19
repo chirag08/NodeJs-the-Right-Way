@@ -1,0 +1,23 @@
+EventEmitter and Stream
+
+event dispatching
+
+Best Practices : “functions as first-class citizens” and block scoping.
+
+In Node.js, a module is a self-contained bit of JavaScript that provides functionality to be used elsewhere
+
+EventEmitter is a very important class in Node. It provides a channel for events
+to be dispatched and listeners notified.
+
+An event listener is a callback function that is
+invoked when an event of a specified type is dispatched. Since the Stream class
+inherits from EventEmitter , we can listen for events from the child process’s
+standard output stream.
+
+Data events in particular pass along a buffer
+object
+
+A Buffer is Node’s way of representing binary data. It points to a blob of
+memory allocated by Node’s native core, outside of the JavaScript engine.
+Buffers can’t be resized and they require encoding and decoding to convert
+to and from JavaScript strings.
