@@ -26,3 +26,7 @@ const
 	server.listen(5432,function(){
 		console.log('Listening for subscribers........');
 	});
+
+	// process.on('uncaughtException', function(err){
+	// 	console.log('ssssssssssssss'+err);
+	// });
